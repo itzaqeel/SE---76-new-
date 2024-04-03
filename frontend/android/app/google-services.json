@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1050763890011",
+    "project_id": "ecoquestfirebase",
+    "storage_bucket": "ecoquestfirebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1050763890011:android:f5239f6410778886949e7e",
+        "android_client_info": {
+          "package_name": "com.example.frontend"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqIoHa7_eJ4tpwhxCvf-8CjKUOPJXnFOU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
