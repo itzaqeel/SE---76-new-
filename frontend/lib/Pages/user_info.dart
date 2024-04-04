@@ -171,7 +171,8 @@ class _UserInfoPageState extends State<UserInfoPage> {
                     CircleAvatar(
                       radius: 30,
                       backgroundImage:
-                          AssetImage(avatarEmoji), // Use appropriate avatar URL
+                          AssetImage(
+                              avatarEmoji), // Use appropriate avatar URL
                     ),
                     const SizedBox(width: 10),
                     Text(

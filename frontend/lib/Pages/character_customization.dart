@@ -41,14 +41,11 @@ class _Character_custState extends State<Character_cust> {
         children: [
           // Background image
           Positioned.fill(
-              child: Opacity(
-                opacity: 0.5,
                 child: Image.asset(
                  'assets/background6.png',
                   fit: BoxFit.cover,
                 )
             ),
-          ),
           // Title "Choose your Avatar" with rounded white box stroke
           Positioned(
             top: 30,
@@ -149,7 +146,16 @@ class _Character_custState extends State<Character_cust> {
             bottom: 90, // Adjust the bottom position as needed
             child: ElevatedButton(
               onPressed: () async {
-                Navigator.of(context).push(
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(
+                    content: Text('FOREST GUARDIAN IS READY FOR BATTLE!!'),
+                    duration: Duration(seconds: 2), // Adjust the duration as needed
+                  ),
+                );
+                // Wait for the SnackBar to be dismissed
+                await Future.delayed(Duration(seconds: 2));
+                Navigator.push(
+                  context,
                   MaterialPageRoute(builder: (context) => NavBar()),
                 );
                 },

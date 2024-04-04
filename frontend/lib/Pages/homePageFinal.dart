@@ -112,8 +112,7 @@ class _HomeState extends State<Home> {
                       CircleAvatar(
                         radius: 30,
                         child: Image.asset(
-                          // 'assets/avatar${user.avatar}.png',
-                          'assets/avatar1.png',
+                          'assets/avatar${user.avatar}.png',
                         ),
 
                       ),

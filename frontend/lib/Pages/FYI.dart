@@ -190,11 +190,11 @@ class _FYIState extends State<FYI> with SingleTickerProviderStateMixin {
                                   padding: const EdgeInsets.only(top: 20.0),
                                   child: SizedBox(
                                     width:
-                                    MediaQuery.of(context).size.width / 0.5,
+                                    MediaQuery.of(context).size.width/1.2,
                                     height:
-                                    MediaQuery.of(context).size.height / 4,
+                                    MediaQuery.of(context).size.height / 3,
                                     child: Image.asset(
-                                      'assets/rewardsUL.jpg',
+                                      'assets/RewardFinal.png',
                                       fit: BoxFit.cover,
                                     ),
                                   ),
@@ -204,11 +204,11 @@ class _FYIState extends State<FYI> with SingleTickerProviderStateMixin {
                                   padding: const EdgeInsets.only(top: 20.0),
                                   child: SizedBox(
                                     width:
-                                    MediaQuery.of(context).size.width / 0.5,
+                                    MediaQuery.of(context).size.width / 1.2,
                                     height:
                                     MediaQuery.of(context).size.height / 3,
                                     child: Image.asset(
-                                      'assets/rewardsUL.jpg',
+                                      'assets/RewardFinal.png',
                                       fit: BoxFit.cover,
                                     ),
                                   ),

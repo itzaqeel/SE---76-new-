@@ -210,7 +210,7 @@ class XPHPBar extends StatefulWidget {
 class _XPHPBarState extends State<XPHPBar> {
   late Timer _timer;
   double xp = 0.0; // Initial XP value
-  double hp = 1; // Initial HP value
+  double hp = 0.5; // Initial HP value
   static const int hpReductionIntervalInMinutes =
   5; // Interval for HP reduction
 

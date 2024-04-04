@@ -42,18 +42,18 @@ class _AvatartCustState extends State<AvatartCust> {
   String selectedImage = ""; // Default selected image
 
   Session session = Session();
-  late int index = 1;
+  late int index;
 
-  void fetchAndSetCharacter() async {
-    UserModel currentUser = await session.getCurrentUser();
-    if (currentUser != null) {
-      setState(() {
-        index = currentUser
-            .character; // Set the index based on the fetched character value
-        selectOption(index); // Update the selectedImage based on the index
-      });
-    }
-  }
+  // void fetchAndSetCharacter() async {
+  //   UserModel currentUser = await session.getCurrentUser();
+  //   if (currentUser != null) {
+  //     setState(() {
+  //       index = currentUser
+  //           .avatar; // Set the index based on the fetched character value
+  //       selectOption(index); // Update the selectedImage based on the index
+  //     });
+  //   }
+  // }
 
   void selectOption(int optionIndex) async {
     setState(() {
@@ -84,7 +84,7 @@ class _AvatartCustState extends State<AvatartCust> {
   @override
   void initState() {
     super.initState();
-    fetchAndSetCharacter();
+    // fetchAndSetCharacter();
   }
 
   @override
@@ -201,7 +201,7 @@ class _AvatartCustState extends State<AvatartCust> {
               onTap: () async {
                 UserModel currentUser = await session.getCurrentUser();
                 if (currentUser != null) {
-                  currentUser.character =
+                  currentUser.avatar =
                       index; // Update the character field with the current index
                   await session.updateUserData(
                       currentUser); // Update the user's data in Firebase
@@ -215,7 +215,7 @@ class _AvatartCustState extends State<AvatartCust> {
                     milliseconds: 1000), // Adjust animation duration as needed
                 curve: Curves.easeInOut,
                 width: 90,
-                height: 100,
+                height: 30,
                 decoration: BoxDecoration(
                   color: Color.fromRGBO(0, 162, 142, 1),
                   borderRadius: BorderRadius.circular(10.0),

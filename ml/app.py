@@ -9,7 +9,7 @@ from ultralytics import YOLO
 app = Flask(__name__)
 
 # Load YOLOv8 model
-model = YOLO("C:\Users\Senal\Desktop\Github\SE76_EcoQuest\ml\model.pt")
+model = YOLO("C:\Users\ASUS\Documents\GitHub\SE---76-new-\ml\model.pt")
 # model.eval()
 
 @app.route('/detect', methods=['POST'])

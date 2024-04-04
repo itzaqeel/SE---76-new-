@@ -276,13 +276,6 @@ class _CharacterCardsState extends State<CharacterCards>
                                                               .center,
                                                           children: [
                                                             Text(
-                                                              'Care Level: ${cardDetails[index]['careLevel']}',
-                                                              style:
-                                                              const TextStyle(
-                                                                  fontSize:
-                                                                  16.0),
-                                                            ),
-                                                            Text(
                                                               'Habitat: ${cardDetails[index]['habitat']}',
                                                               style:
                                                               const TextStyle(
@@ -298,13 +291,6 @@ class _CharacterCardsState extends State<CharacterCards>
                                                             ),
                                                             Text(
                                                               'Nutrition Favorite: ${cardDetails[index]['nutritionFavorite']}',
-                                                              style:
-                                                              const TextStyle(
-                                                                  fontSize:
-                                                                  16.0),
-                                                            ),
-                                                            Text(
-                                                              'Tips : ${cardDetails[index]['additionalNotes']}',
                                                               style:
                                                               const TextStyle(
                                                                   fontSize:

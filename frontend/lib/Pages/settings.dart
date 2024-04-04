@@ -53,7 +53,7 @@ class InstructionsPage extends StatelessWidget {
                       width: 365, // Adjust width as needed
                     ),
                     Image.asset(
-                      'assets/step 2.png', // Replace with your image asset path
+                      'assets/step222.png', // Replace with your image asset path
                       height: 365, // Adjust height as needed
                       width: 365, // Adjust width as needed
                     ),
