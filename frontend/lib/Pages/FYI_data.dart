@@ -22,9 +22,7 @@ class Rewards {
     {
       'name': 'The average American uses about 2,200 napkins each year. Using cloth napkins instead can significantly reduce waste.',
     },
-    {
-      'name': 'A single mature tree can absorb carbon dioxide at a rate of 48 pounds per year and release enough oxygen back into the atmosphere to support two human beings.',
-    },
+
     {
       'name': 'LED light bulbs use 75% less energy and last 25 times longer than traditional incandescent bulbs.',
     },
@@ -32,5 +30,5 @@ class Rewards {
       'name': 'The Great Barrier Reef is the largest living structure on Earth and can even be seen from outer space.',
     },
   ];
-  static List<double> xpLevels = [12, 68, 167, 235];
+  static List<double> xpLevels = [1];
 }
